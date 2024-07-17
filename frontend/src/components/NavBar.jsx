@@ -12,7 +12,7 @@ const DropdownLinks = [
   { id: 3, name: "Grains", link: "/#" },
 ];
 
-const NavBar = () => {
+const NavBar = ({ HandlePopup }) => {
   return (
     <div className="bg-white shadow-md">
       <div className="container flex justify-between py-4 sm:py-3">
@@ -26,7 +26,7 @@ const NavBar = () => {
               <li key={id}>
                 <a
                   href={link}
-                  className="inline-block text-xl font-semibold hover:text-primary"
+                  className="hidden sm:inline-block text-xl font-semibold hover:text-primary"
                 >
                   {name}
                 </a>
@@ -34,7 +34,7 @@ const NavBar = () => {
             ))}
 
             {/* Dropdown Menu */}
-            <li className="cursor-pointer group ">
+            <li className="hidden md:block cursor-pointer group ">
               <a
                 href="/#"
                 className="inline-block text-xl font-semibold hover:text-primary"
@@ -64,7 +64,10 @@ const NavBar = () => {
 
             {/* Login button */}
             <li>
-              <button className="flex justify-center items-center gap-2 bg-secondary text-white h-[40px] px-5 py-2 text-xl hover:scale-105 duration-300">
+              <button
+                onClick={HandlePopup}
+                className="flex justify-center items-center gap-2 bg-secondary text-white h-[40px] px-2 md:px-5 py-2 text-xl  hover:scale-105 duration-300"
+              >
                 <FaUser />
                 My Account
               </button>

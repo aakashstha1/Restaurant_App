@@ -5,11 +5,14 @@ const WhyChoose = () => {
       <div className="py-14 md:py-28 bg-gray-50">
         <div className="container">
           {/* heading section  */}
-          <h1 className="text-dark text-center font-semibold pb-16 tracking-wider text-2xl">
+          <h1
+            data-aos="fade"
+            className="text-dark text-center font-semibold pb-16 tracking-wider text-2xl"
+          >
             Why Choose Us?
           </h1>
           {/* card section  */}
-          <div>
+          <div data-aos="fade" data-aos-delay="300">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-14 sm:gap-4">
               {/* First Card  */}
               <div className="flex flex-col justify-center items-center text-center gap-2 px-2">

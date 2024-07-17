@@ -18,24 +18,31 @@ const Hero = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 place-items-center min-h-[600px]">
             {/* text content section */}
             <div className="space-y-7 order-2">
-              <h1 className="text-7xl text-dark order-2 sm:order-1 ">
-                Fresh & Healthy Meal Plan
-                <span className="text-secondary font-cursive text-7xl">
+              <h1
+                data-aos="fade-up"
+                className="text-7xl text-dark order-2 sm:order-1 "
+              >
+                Fresh & Healthy Meal Plan 
+                <span className="text-secondary font-cursive text-7xl ">
                   Delivery
-                </span>{" "}
+                </span>
                 in Itahari
               </h1>
-              <p className="lg:pr-64">
+              <p data-aos="fade-up" data-aos-delay="300" className="lg:pr-64">
                 Delecious Meals Delivered to our Door From Rs.1000 per week
               </p>
 
               {/* Button section  */}
-              <div>
+              <div data-aos="fade-up" data-aos-delay="500">
                 <PrimaryButton />
               </div>
             </div>
             {/* Image section */}
-            <div className="relative z-30 order-1 sm:order-2">
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="500"
+              className="relative z-30 order-1 sm:order-2"
+            >
               <img
                 src={heroImg}
                 alt="hero.png"
